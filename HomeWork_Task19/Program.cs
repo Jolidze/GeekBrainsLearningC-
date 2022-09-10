@@ -15,4 +15,9 @@ int x2 = palin / 1000 % 10; //вторая
 int x4 = palin % 100 / 10; //четвертая
 int x5 = palin % 10; //пятая
 
-Console.WriteLine("x1 = " + x1 + ", x2 = " + x2 + ", x4 = " + x4 + ", x5 = " + x5);
+//Console.WriteLine("x1 = " + x1 + ", x2 = " + x2 + ", x4 = " + x4 + ", x5 = " + x5);
+
+if (x1 == x5 && x2 == x4)
+    Console.WriteLine("Да, это палиндром");
+else
+    Console.WriteLine("Нет");
