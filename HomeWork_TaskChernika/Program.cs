@@ -1,4 +1,5 @@
 ﻿//Задача Сбор черники
+// https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=5&id_topic=113&id_problem=695
 
 /*
 В фермерском хозяйстве в Карелии выращивают чернику. 
@@ -20,8 +21,15 @@
 Console.Clear();
 
 //запросим количество кустов
-Console.Write("Введите количество кустов черники на грядке: ");
+
+Console.Write("Введите количество кустов черники на грядке (не менее 3): ");
 int count = Convert.ToInt32(Console.ReadLine());
+
+while (count < 3)
+{
+    Console.Write("Ошибка ввода. Введите количество кустов черники на грядке (не менее 3): ");
+    count = Convert.ToInt32(Console.ReadLine());
+}
 
 //создадим массив
 int[] array = new int[count];
