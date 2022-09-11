@@ -1,4 +1,5 @@
 ﻿// Задача Двойной переворот
+//https://acmp.ru/asp/do/index.asp?main=task&id_course=1&id_section=5&id_topic=114&id_problem=700
 
 /*
 Дана последовательность натуральных чисел 1, 2, 3, ..., N. 
@@ -50,6 +51,12 @@ void Coup (int[] arToCoup, int coupFrom, int coupTo)
         incr++;
 
     }
+}
+
+//метод для подписи работ
+void Author ()
+{
+    System.Console.WriteLine ("Автор: Григорьева Юлия, группа 3130");
 }
 
 //основная программа:
@@ -121,3 +128,5 @@ while (D < C || D > N)
 Coup(MyArrayNatural, C, D);
 Console.WriteLine("Массив после второго разворота: [" + string.Join(",", MyArrayNatural) + "]");
 Console.WriteLine();
+
+Author ();
